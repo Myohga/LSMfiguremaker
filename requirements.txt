@@ -1,0 +1,15 @@
+# CZI 図作成ツール
+# 解析用の conda 環境（cellcount）にはすべて入っているはずなので、通常は追加インストール不要。
+# 新しい環境に入れる場合だけ: pip install -r requirements.txt
+numpy>=1.24
+pillow>=10.1
+czifile>=2019.7.2
+qtpy>=2.0
+PyQt6>=6.5          # napari[all] で入っている Qt があればそれで良い（PySide6 / PyQt5 でも可）
+python-pptx>=1.0     # PowerPoint 書き出し（PNG だけなら無くても動く）
+superqt>=0.6        # 明るさの 2 つまみスライダー（napari に同梱。無くても普通のスライダーで動く）
+# run_analysis_9th.py を import するために必要（解析環境には既にある）
+pandas>=2.0
+scipy>=1.10
+scikit-image>=0.22
+opencv-python>=4.8
